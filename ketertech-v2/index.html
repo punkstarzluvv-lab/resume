@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCENE | Protocol Console</title>
+    <link rel="stylesheet" href="styles/main.css?v=13.0.0">
+    <!-- Google Fonts for Industrial Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Layer 0: Main Concrete Background Plate -->
+    <div class="background-plate"></div>
+
+    <!-- Layer 2: Atmospheric Spotlight Overlay -->
+    <div class="light-overlay"></div>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Top Header Bar -->
+        <header class="main-header">
+            <div class="logo-area">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <span class="brand-logo" style="cursor: pointer;">SCENE</span>
+                </a>
+            </div>
+            
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="top-nav">
+                <div class="placeholder-btn nav-btn active" onclick="window.location.href='index.html'">[Home]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='projects.html'">[Projects]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='capabilities.html'">[Capabilities]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='about.html'">[About Me]</div>
+                <div class="placeholder-btn nav-btn contact-btn" onclick="window.location.href='resume-contact.html'">[Contact/Resumé]</div>
+            </nav>
+                </header>
+
+        <!-- Mobile Nav Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNav">
+            <nav class="mobile-nav-content">
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='index.html'">[Home]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='projects.html'">[Projects]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='capabilities.html'">[Capabilities]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='about.html'">[About Me]</div>
+                <div class="placeholder-btn nav-btn contact-btn" onclick="window.location.href='resume-contact.html'">[Contact/Resumé]</div>
+            </nav>
+        </div>
+
+        <!-- Sidebar Navigation Area -->
+        <aside class="sidebar">
+            <div class="sidebar-track">
+                <div class="placeholder-btn side-btn active" onclick="window.location.href='index.html'"><span>PORTFOLIO / CV</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='projects.html'"><span>PROJECTS</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='capabilities.html'"><span>CAPABILITIES</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='about.html'"><span>ABOUT ME</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='resume-contact.html'"><span>CONTACT FORM</span></div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="workspace">
+            <!-- Left Side: Hero Area -->
+            <section class="hero-container">
+                <div class="hero-title">CREATIVE EXECUTION<br>FOR BUSINESS</div>
+                <div class="hero-subtitle">DESIGN / FRONT-END / BRANDING / SYSTEMS</div>
+                
+                <div class="value-statement-zone">
+                    <!-- Analog Machine as LIVE looping video centerpiece -->
+                    <video autoplay muted loop playsinline class="hero-machine-bg" poster="assets/keter_core_hub.png">
+                        <source src="assets/analog_loop_alpha.webm" type="video/webm">
+                        <source src="assets/analog_loop.mp4" type="video/mp4">
+                    </video>
+                    
+                    <div class="value-content">
+                        <div class="maker-name">CONSTANTINE CABALLERO</div>
+                        <div class="maker-title">Digital Creative / Systems-Driven Builder</div>
+                        <p class="maker-bio">
+                            I help businesses improve presentation, clarity, trust, and digital execution through design, branding, front-end work, content direction, and systems thinking.
+                        </p>
+                        
+                        <div class="action-buttons">
+                            <button class="hero-btn primary" onclick="window.location.href='projects.html'">View Projects</button>
+                            <button class="hero-btn" onclick="window.location.href='resume-contact.html'">Download Resume</button>
+                            <button class="hero-btn contact-accent" onclick="window.location.href='resume-contact.html'">Contact Me</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Industrial Audio Console -->
+                <div class="audio-console" id="audioConsole">
+                    <div class="audio-header">
+                        <span class="audio-label">AUDIO SYSTEM</span>
+                        <div class="audio-status">
+                            <span class="status-dot" id="statusDot"></span>
+                            <span id="statusText">STANDBY</span>
+                        </div>
+                    </div>
+                    <div class="lcd-display" id="lcdDisplay">SYSTEM READY — SELECT PLAY TO BEGIN</div>
+                    <div class="audio-controls">
+                        <button class="audio-btn" onclick="changeTrack(-1)">◄ PREV</button>
+                        <button class="audio-btn play-btn" id="playBtn" onclick="togglePlay()">► PLAY</button>
+                        <button class="audio-btn" onclick="changeTrack(1)">NEXT ►</button>
+                    </div>
+                    <div class="audio-progress">
+                        <div class="audio-progress-bar" id="progressBar"></div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Right Side: Unified Industrial Console (No metrics) -->
+            <aside class="console-hub vertical-panel">
+                <div class="side-module system-logs">
+                    <header class="panel-header">SYSTEM STATUS / HIRING DATA</header>
+                    <div class="panel-content logs-window" style="padding-right: 15px;">
+                        <div class="term-section">
+                            <span class="term-heading">> PROFILE SUMMARY</span>
+                            <ul class="term-list">
+                                <li>[+] Web Design</li>
+                                <li>[+] Front-End Execution</li>
+                                <li>[+] Branding</li>
+                                <li>[+] Content Direction</li>
+                                <li>[+] AI Workflows</li>
+                                <li>[+] Digital Systems</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="term-section">
+                            <span class="term-heading">> BUSINESS VALUE</span>
+                            <ul class="term-list">
+                                <li>[+] Stronger Presentation</li>
+                                <li>[+] Better Clarity</li>
+                                <li>[+] More Trust</li>
+                                <li>[+] Better Conversion</li>
+                                <li>[+] Faster Workflows</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="term-section" style="margin-bottom: 0;">
+                            <span class="term-heading">> TOOLS & SKILLS</span>
+                            <ul class="term-list multi-col">
+                                <li>[+] React</li>
+                                <li>[+] Tailwind</li>
+                                <li>[+] Vite</li>
+                                <li>[+] Figma</li>
+                                <li>[+] GitHub</li>
+                                <li>[+] Vercel</li>
+                                <li>[+] Anti Gravity</li>
+                                <li>[+] ChatGPT</li>
+                                <li>[+] Claude Code</li>
+                                <li>[+] Brand Identity</li>
+                                <li>[+] UI / UX Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Footer / CTA Zone -->
+        <footer class="main-footer">
+            <a href="resume-contact.html" class="cta-link">RESUMÉ | LET'S WORK TOGETHER</a>
+            <div class="footer-meta">
+                All Rights Reserved 2024 - KeterTech Portfolio | constatinecaballero@gmail.com
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts Area -->
+    <script src="scripts/main.js?v=13.0.0"></script>
+    <script src="scripts/codefield.js"></script>
+</body>
+</html>
