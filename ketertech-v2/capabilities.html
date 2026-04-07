@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCENE | Capabilities</title>
+    <!-- Use the same styling sheet, guaranteeing consistency -->
+    <link rel="stylesheet" href="styles/main.css?v=13.0.0">
+    <!-- Google Fonts for Industrial Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Layer 0: Main Concrete Background Plate -->
+    <div class="background-plate"></div>
+
+    <!-- Layer 2: Atmospheric Spotlight Overlay -->
+    <div class="light-overlay"></div>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Top Header Bar -->
+        <header class="main-header">
+            <div class="logo-area">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <span class="brand-logo" style="cursor: pointer;">SCENE</span>
+                </a>
+            </div>
+            
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="top-nav">
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='projects.html'">[Projects]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='capabilities.html'">[Capabilities]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='about.html'">[About Me]</div>
+                <div class="placeholder-btn nav-btn contact-btn" onclick="window.location.href='resume-contact.html'">[Contact/Resumé]</div>
+            </nav>
+                </header>
+
+        <!-- Mobile Nav Overlay -->
+        <div class="mobile-nav-overlay" id="mobileNav">
+            <nav class="mobile-nav-content">
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='index.html'">[Home]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='projects.html'">[Projects]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='capabilities.html'">[Capabilities]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='about.html'">[About Me]</div>
+                <div class="placeholder-btn nav-btn contact-btn" onclick="window.location.href='resume-contact.html'">[Contact/Resumé]</div>
+            </nav>
+        </div>
+
+        <!-- Sidebar Navigation Area -->
+        <aside class="sidebar">
+            <div class="sidebar-track">
+                <div class="placeholder-btn side-btn" onclick="window.location.href='index.html'"><span>PORTFOLIO / CV</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='projects.html'"><span>PROJECTS</span></div>
+                <!-- ACTIVE Selection -->
+                <div class="placeholder-btn side-btn active"><span>CAPABILITIES</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='about.html'"><span>ABOUT ME</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='resume-contact.html'"><span>CONTACT FORM</span></div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace (Set to Full Width overriding the 2-column grid definition) -->
+        <main class="workspace full-width">
+            
+            <!-- CAPABILITIES VIEW -->
+            <section class="about-container" style="display: flex;">
+                <h1 class="about-head">CAPABILITIES</h1>
+                <p class="about-lead">
+                    I combine creative direction, digital execution, and systems thinking to help businesses build stronger online presence and more effective digital communication.
+                </p>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-title">CREATIVE DIRECTION</div>
+                        <p>Brand presentation, visual identity, and stronger digital first impressions.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-title">DIGITAL EXECUTION</div>
+                        <p>Web design, front-end builds, and content structure shaped for clarity and usability.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-title">SYSTEMS THINKING</div>
+                        <p>AI-assisted workflows and organized digital systems that improve speed, trust, and business value.</p>
+                    </div>
+                </div>
+
+                <p class="about-closing">Open to opportunities in creative execution, digital systems, branding, and web-focused work.</p>
+                <a href="projects.html" class="hero-btn primary" style="margin-top: 35px; text-decoration: none; display: inline-block;">VIEW PROJECTS</a>
+            </section>
+
+        </main>
+
+        <!-- Footer / CTA Zone -->
+        <footer class="main-footer">
+            <a href="resume-contact.html" class="cta-link">RESUMÉ | LET'S WORK TOGETHER</a>
+            <div class="footer-meta">
+                All Rights Reserved 2024 - KeterTech Portfolio | [Personal Email/LinkedIn Link]
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts Area -->
+    <script src="scripts/main.js?v=13.0.0"></script>
+    <script src="scripts/codefield.js"></script>
+</body>
+</html>
