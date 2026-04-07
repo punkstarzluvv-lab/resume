@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCENE | Featured Work</title>
+    <!-- Use the same styling sheet, guaranteeing consistency -->
+    <link rel="stylesheet" href="styles/main.css?v=12.0.0">
+    <!-- Google Fonts for Industrial Aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Layer 0: Main Concrete Background Plate -->
+    <div class="background-plate"></div>
+
+    <!-- Layer 2: Atmospheric Spotlight Overlay -->
+    <div class="light-overlay"></div>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+        
+        <!-- Top Header Bar -->
+        <header class="main-header">
+            <div class="logo-area">
+                <a href="index.html" style="color: inherit; text-decoration: none;">
+                    <span class="brand-logo" style="cursor: pointer;">SCENE</span>
+                </a>
+            </div>
+            
+            <nav class="top-nav">
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='projects.html'">[Projects]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='capabilities.html'">[Capabilities]</div>
+                <div class="placeholder-btn nav-btn" onclick="window.location.href='about.html'">[About Me]</div>
+                <div class="placeholder-btn nav-btn contact-btn">[Contact/Resumé]</div>
+            </nav>
+        </header>
+
+        <!-- Sidebar Navigation Area -->
+        <aside class="sidebar">
+            <div class="sidebar-track">
+                <div class="placeholder-btn side-btn" onclick="window.location.href='index.html'"><span>PORTFOLIO / CV</span></div>
+                <!-- ACTIVE Selection -->
+                <div class="placeholder-btn side-btn active" onclick="window.location.href='projects.html'"><span>PROJECTS</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='capabilities.html'"><span>CAPABILITIES</span></div>
+                <div class="placeholder-btn side-btn" onclick="window.location.href='about.html'"><span>ABOUT ME</span></div>
+                <div class="placeholder-btn side-btn"><span>CONTACT FORM</span></div>
+            </div>
+        </aside>
+
+        <!-- Main Workspace (Set to Full Width overriding the 2-column grid definition) -->
+        <main class="workspace full-width">
+            
+            <!-- FEATURED WORK VIEW -->
+            <section class="project-container">
+                <!-- Header Block -->
+                <div class="project-header">
+                    <div class="feature-label-group">
+                        <div class="feature-line"></div>
+                        <span class="feature-label">FEATURED WORK</span>
+                        <div class="feature-line"></div>
+                    </div>
+                    <h1 class="project-title">SUSY'S HAIR SALON</h1>
+                    <h3 class="project-subtitle">Trust-focused local business website</h3>
+                    <p class="project-description">
+                        A business-facing website concept built to strengthen first impression, clarify services, and make customer action easier.
+                    </p>
+                </div>
+                
+                <!-- 2-Column Split -->
+                <div class="project-split">
+                    <!-- Left Column: Strategy Info Blocks -->
+                    <div class="project-left">
+                        <div class="info-block">
+                            <div class="info-label">ROLE</div>
+                            <p>Design, layout, front-end, and content structure</p>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-label">OBJECTIVE</div>
+                            <p>Improve trust, clarity, and customer action</p>
+                        </div>
+                        <div class="info-block">
+                            <div class="info-label">OUTCOME</div>
+                            <p>A more polished and credible digital presence for a local business.</p>
+                        </div>
+                        <button class="hero-btn primary case-study-btn" onclick="window.location.href='susy-case-study.html'">VIEW CASE STUDY</button>
+                    </div>
+
+                    <!-- Right Column: Visual Previews -->
+                    <div class="project-right">
+                        <div class="mockup-frame main-preview">
+                            <img src="assets/susy-mock-1.png" alt="Susy's Hair Salon Mockup">
+                            <div class="gallery-nav prev">&#10094;</div>
+                            <div class="gallery-nav next">&#10095;</div>
+                        </div>
+                        <div class="thumbnail-row">
+                            <div class="mockup-frame mini-preview">
+                                <img src="assets/susy-mock-1.png" alt="Thumbnail 1">
+                            </div>
+                            <div class="mockup-frame mini-preview">
+                                <img src="assets/susy-mock-2.png" alt="Thumbnail 2">
+                            </div>
+                            <div class="mockup-frame mini-preview">
+                                <img src="assets/susy-mock-3.png" alt="Thumbnail 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer / CTA Zone -->
+        <footer class="main-footer">
+            <div class="cta-line">RESUMÉ | LET'S WORK TOGETHER</div>
+            <div class="footer-meta">
+                All Rights Reserved 2024 - KeterTech Portfolio | [Personal Email/LinkedIn Link]
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts Area -->
+    <script src="scripts/main.js?v=12.0.0"></script>
+    <script src="scripts/codefield.js"></script>
+</body>
+</html>
